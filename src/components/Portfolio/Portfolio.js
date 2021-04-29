@@ -9,8 +9,8 @@ import project from "../../images/e-commerce.png";
 import project1 from "../../images/BreakingBad.jpg";
 import project2 from "../../images/expenseTracker.jpg";
 
-const tech = ["react", "vue", "asd"];
-const tech1 = ["LKAAKAKA", "ASDADGSFD", "RIKI"];
+const tech = ["REACT.JS", "STRIPE.JS", "COMMERCE.JS"];
+const tech1 = ["REACT.JS", "PAGINATION"];
 
 const Portfolio = () => {
   const classes = useStyles();
@@ -38,13 +38,13 @@ const Portfolio = () => {
         <Project
           title="E-COMMERCE"
           technologies={tech}
-          text="asdasdasdasdasdasdasdasdasd"
+          text="A"
           image={project}
         />
         <Project
           title="TUMAMA"
           technologies={tech1}
-          text="bbbbbbbbbbb"
+          text="B"
           image={project1}
         />
       </Grid>
