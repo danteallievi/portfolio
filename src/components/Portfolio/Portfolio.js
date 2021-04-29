@@ -1,12 +1,20 @@
-import { Container, Typography, Button, Grid } from "@material-ui/core";
+import { useState } from "react";
+
+import { Container, Typography, Grid } from "@material-ui/core";
 import useStyles from "./styles";
+
+import Project from "./Proyect/Project";
 
 import project from "../../images/e-commerce.png";
 import project1 from "../../images/BreakingBad.jpg";
 import project2 from "../../images/expenseTracker.jpg";
 
+const tech = ["react", "vue", "asd"];
+const tech1 = ["LKAAKAKA", "ASDADGSFD", "RIKI"];
+
 const Portfolio = () => {
   const classes = useStyles();
+
   return (
     <Container>
       <div className={classes.toolbar} />
@@ -27,65 +35,18 @@ const Portfolio = () => {
         direction="row"
         spacing={4}
       >
-        <Grid
-          container
-          justify="center"
-          item
-          xs={8}
-          md={4}
-          xl={3}
-          className={classes.box}
-        >
-          <img
-            src={project}
-            alt="First proyect"
-            width="100%"
-            className={classes.img}
-          />
-          <Button variant="contained" className={classes.projectButtons}>
-            View project
-          </Button>
-        </Grid>
-
-        <Grid
-          container
-          justify="center"
-          item
-          xs={8}
-          md={4}
-          xl={3}
-          className={classes.box}
-        >
-          <img
-            src={project1}
-            alt="First proyect"
-            width="100%"
-            className={classes.img}
-          />
-          <Button variant="contained" className={classes.projectButtons}>
-            View project
-          </Button>
-        </Grid>
-
-        <Grid
-          container
-          justify="center"
-          item
-          xs={8}
-          md={4}
-          xl={3}
-          className={classes.box}
-        >
-          <img
-            src={project2}
-            alt="First proyect"
-            width="100%"
-            className={classes.img}
-          />
-          <Button variant="contained" className={classes.projectButtons}>
-            View project
-          </Button>
-        </Grid>
+        <Project
+          title="E-COMMERCE"
+          technologies={tech}
+          text="asdasdasdasdasdasdasdasdasd"
+          image={project}
+        />
+        <Project
+          title="TUMAMA"
+          technologies={tech1}
+          text="bbbbbbbbbbb"
+          image={project1}
+        />
       </Grid>
     </Container>
   );
