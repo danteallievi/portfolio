@@ -17,7 +17,7 @@ export default makeStyles((theme) => ({
       width: "60vw",
       height: "70vh",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       width: "70vw",
       height: "75vh",
     },
@@ -34,6 +34,7 @@ export default makeStyles((theme) => ({
   },
 
   close: {
+    transition: "all 0.2s ",
     color: "#fff",
     fontSize: "3rem",
     padding: 0,
@@ -42,11 +43,9 @@ export default makeStyles((theme) => ({
     top: "1%",
     backgroundColor: "#343a41",
     border: "none",
-    [theme.breakpoints.down("sm")]: {
-      top: "0%",
-    },
     "&:hover": {
       cursor: "pointer",
+      transform: "scale(1.1)",
     },
   },
 

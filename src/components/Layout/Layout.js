@@ -1,4 +1,4 @@
-import { Navbar, Sidebar } from "../index";
+import { Navbar, Sidebar, Footer } from "../index";
 
 import useStyles from "./styles";
 
@@ -9,6 +9,7 @@ const Layout = ({ children }) => {
       <Navbar />
       <Sidebar />
       {children}
+      <Footer />
     </div>
   );
 };

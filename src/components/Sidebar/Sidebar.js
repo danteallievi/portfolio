@@ -10,21 +10,21 @@ const Sidebar = () => {
   return (
     <>
       <aside className={classes.sidebar}>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/dante-allievi-3907291b2">
           <span className={classes.text}>Linkedin</span>
           <i>
             <LinkedInIcon className={classes.icon} />
           </i>
         </a>
 
-        <a href="#">
+        <a href="https://github.com/danteallievi">
           <span className={classes.text}>Github</span>
           <i>
             <GitHubIcon className={classes.icon} />
           </i>
         </a>
 
-        <a href="#">
+        <a href="mailto:danteallievi@gmail.com">
           <span className={classes.text}>Email</span>
           <i>
             <MailIcon className={classes.icon} />

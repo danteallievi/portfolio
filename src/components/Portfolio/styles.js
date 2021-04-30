@@ -5,4 +5,7 @@ export default makeStyles((theme) => ({
   gris: {
     color: "#9e9e9e",
   },
+  grid: {
+    marginBottom: "1rem",
+  },
 }));

@@ -2,11 +2,10 @@ import { useState } from "react";
 import ModalWindow from "./ModalWindow/ModalWindow";
 
 import { Button, Grid } from "@material-ui/core";
-
 import useStyles from "./styles";
 
 const Project = ({ title, text, technologies, image }) => {
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState(false);
   const classes = useStyles();
 
   const handleOpen = () => {

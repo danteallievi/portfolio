@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { Container, Typography, Button } from "@material-ui/core";
 import useStyles from "./styles";
 
@@ -18,13 +20,15 @@ const About = () => {
         </Typography>
 
         <Button
+          component={Link}
+          to="/portfolio"
           className={classes.button}
           color="default"
           variant="contained"
           disableElevation
-          size="large"
+          size="small"
         >
-          PORTFOLIO
+          VIEW PROJECTS
         </Button>
       </Container>
     </>

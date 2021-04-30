@@ -1,20 +1,62 @@
 import { useState } from "react";
-import MenuIcon from "@material-ui/icons/Menu";
+import { Link } from "react-router-dom";
+
+import { Button, Modal, Backdrop, Fade } from "@material-ui/core";
+
 import useStyles from "./styles";
+import Hamburger from "./Hamburger/Hamburger";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isIconOpen, setIsIconOpen] = useState(false);
   const classes = useStyles();
+
+  const handleOpenIcon = () => {
+    isIconOpen ? setIsIconOpen(false) : setIsIconOpen(true);
+  };
+
   return (
     <>
-      <div className={classes.navIcon + (isOpen ? ` ${classes.open}` : "")}>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <Hamburger isIconOpen={isIconOpen} handleOpenIcon={handleOpenIcon} />
+
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={isIconOpen}
+        onClose={handleOpenIcon}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={isIconOpen}>
+          <div className={classes.paper}>
+            <Hamburger
+              isIconOpen={isIconOpen}
+              handleOpenIcon={handleOpenIcon}
+            />
+            <Button
+              component={Link}
+              to="/"
+              onClick={handleOpenIcon}
+              variant="outlined"
+              className={classes.menuButtons}
+            >
+              About
+            </Button>
+            <Button
+              component={Link}
+              to="/portfolio"
+              onClick={handleOpenIcon}
+              variant="outlined"
+              className={classes.menuButtons}
+            >
+              Portfolio
+            </Button>
+          </div>
+        </Fade>
+      </Modal>
     </>
   );
 };

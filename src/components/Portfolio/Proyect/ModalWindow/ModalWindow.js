@@ -54,7 +54,7 @@ const ModalWindow = ({ open, handleClose, title, technologies, text }) => {
 
             <Grid container spacing={1} className={classes.technologyContainer}>
               {technologies.map((tech) => (
-                <Grid item>
+                <Grid item key={tech}>
                   <Typography
                     variant="subtitle2"
                     component="h3"

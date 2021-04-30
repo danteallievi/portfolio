@@ -1,16 +1,18 @@
-import { useState } from "react";
-
 import { Container, Typography, Grid } from "@material-ui/core";
 import useStyles from "./styles";
 
 import Project from "./Proyect/Project";
 
-import project from "../../images/e-commerce.png";
-import project1 from "../../images/BreakingBad.jpg";
-import project2 from "../../images/expenseTracker.jpg";
+import eCommerceImg from "../../images/e-commerce.png";
+import breakingBadImg from "../../images/BreakingBad.jpg";
+import expenseTrackerImg from "../../images/expenseTracker.jpg";
 
-const tech = ["REACT.JS", "STRIPE.JS", "COMMERCE.JS"];
-const tech1 = ["REACT.JS", "PAGINATION"];
+const eCommerceText =
+  "For this project I've worked in React.js, with things like Stripe, to make card transactions, and build my first application e-commerce fully functional using Commerce.js";
+const breakingBadText =
+  "For this project I've worked in React.js, with a Breaking Bad API, to create a small app with a simple pagination, to show and filter the character info.";
+const expenseTrackerText =
+  "This was one of my first apps. Built in React.js to learn the correct use of React-Hooks";
 
 const Portfolio = () => {
   const classes = useStyles();
@@ -22,8 +24,8 @@ const Portfolio = () => {
         Portfolio
       </Typography>
       <Typography variant="body1" className={classes.gris} paragraph>
-        These are my favorite projects I've worked on. Have a look around and
-        make sure to hit me up!
+        {"//"} These are my favorite projects I've worked on. Have a look around
+        and make sure to hit me up!
       </Typography>
 
       <Grid
@@ -37,15 +39,23 @@ const Portfolio = () => {
       >
         <Project
           title="E-COMMERCE"
-          technologies={tech}
-          text="A"
-          image={project}
+          technologies={["REACT.JS", "MATERIAL-UI", "STRIPE.JS", "COMMERCE.JS"]}
+          text={eCommerceText}
+          image={eCommerceImg}
         />
+
         <Project
-          title="TUMAMA"
-          technologies={tech1}
-          text="B"
-          image={project1}
+          title="BREAKING BAD API"
+          technologies={["REACT.JS", "AXIOS", "BOOTSTRAP"]}
+          text={breakingBadText}
+          image={breakingBadImg}
+        />
+
+        <Project
+          title="EXPENSE TRACKER"
+          technologies={["REACT.JS", "REACT-HOOKS"]}
+          text={expenseTrackerText}
+          image={expenseTrackerImg}
         />
       </Grid>
     </Container>
