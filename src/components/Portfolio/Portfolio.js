@@ -7,12 +7,22 @@ import eCommerceImg from "../../images/e-commerce.png";
 import breakingBadImg from "../../images/BreakingBad.jpg";
 import expenseTrackerImg from "../../images/expenseTracker.jpg";
 
-const eCommerceText =
-  "For this project I've worked in React.js, with things like Stripe, to make card transactions, and build my first application e-commerce fully functional using Commerce.js";
-const breakingBadText =
-  "For this project I've worked in React.js, with a Breaking Bad API, to create a small app with a simple pagination, to show and filter the character info.";
-const expenseTrackerText =
-  "This was one of my first apps. Built in React.js to learn the correct use of React-Hooks";
+const eCommerce = {
+  text: `For this project I've worked in React.js, with things like Stripe, to make card transactions, and build my first application e-commerce fully functional using Commerce.js`,
+  demo: `https://tech-e-commerce.netlify.app/`,
+  code: `https://github.com/danteallievi/e-commerce`,
+};
+
+const breakingBad = {
+  text: `For this project I've worked in React.js, with a Breaking Bad API, to create a small app with a simple pagination, to show and filter the character info.`,
+  demo: `https://danteallievi.github.io/breakingbad/`,
+  code: `https://github.com/danteallievi/breakingbad`,
+};
+const expenseTracker = {
+  text: `This was one of my first apps. Built in React.js to learn the correct use of React-Hooks`,
+  demo: `https://danteallievi.github.io/expense-tracker/`,
+  code: `https://github.com/danteallievi/expense-tracker`,
+};
 
 const Portfolio = () => {
   const classes = useStyles();
@@ -40,22 +50,28 @@ const Portfolio = () => {
         <Project
           title="E-COMMERCE"
           technologies={["REACT.JS", "MATERIAL-UI", "STRIPE.JS", "COMMERCE.JS"]}
-          text={eCommerceText}
+          text={eCommerce.text}
           image={eCommerceImg}
+          demoLink={eCommerce.demo}
+          codeLink={eCommerce.code}
         />
 
         <Project
           title="BREAKING BAD API"
           technologies={["REACT.JS", "AXIOS", "BOOTSTRAP"]}
-          text={breakingBadText}
+          text={breakingBad.text}
           image={breakingBadImg}
+          demoLink={breakingBad.demo}
+          codeLink={breakingBad.code}
         />
 
         <Project
           title="EXPENSE TRACKER"
           technologies={["REACT.JS", "REACT-HOOKS"]}
-          text={expenseTrackerText}
+          text={expenseTracker.text}
           image={expenseTrackerImg}
+          demoLink={expenseTracker.demo}
+          codeLink={expenseTracker.code}
         />
       </Grid>
     </Container>

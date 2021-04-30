@@ -6,6 +6,9 @@ export default makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    "& a": {
+      textDecoration: "none",
+    },
   },
   paper: {
     border: "2px solid #000",

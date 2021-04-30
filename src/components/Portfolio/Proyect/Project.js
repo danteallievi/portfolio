@@ -4,7 +4,7 @@ import ModalWindow from "./ModalWindow/ModalWindow";
 import { Button, Grid } from "@material-ui/core";
 import useStyles from "./styles";
 
-const Project = ({ title, text, technologies, image }) => {
+const Project = ({ title, text, technologies, image, demoLink, codeLink }) => {
   const [open, setOpen] = useState(false);
   const classes = useStyles();
 
@@ -37,6 +37,8 @@ const Project = ({ title, text, technologies, image }) => {
         </Button>
 
         <ModalWindow
+          demoLink={demoLink}
+          codeLink={codeLink}
           open={open}
           handleOpen={handleOpen}
           handleClose={handleClose}

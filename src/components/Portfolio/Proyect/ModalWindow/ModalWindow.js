@@ -11,8 +11,17 @@ import useStyles from "./styles";
 
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import CodeIcon from "@material-ui/icons/Code";
+import { NavLink } from "react-router-dom";
 
-const ModalWindow = ({ open, handleClose, title, technologies, text }) => {
+const ModalWindow = ({
+  open,
+  handleClose,
+  title,
+  technologies,
+  text,
+  demoLink,
+  codeLink,
+}) => {
   const classes = useStyles();
 
   return (
@@ -80,20 +89,24 @@ const ModalWindow = ({ open, handleClose, title, technologies, text }) => {
             </Typography>
 
             <div className={classes.modalButtonsContainer}>
-              <Button
-                startIcon={<VisibilityIcon />}
-                variant="contained"
-                className={classes.modalButtons}
-              >
-                DEMO
-              </Button>
-              <Button
-                startIcon={<CodeIcon />}
-                variant="contained"
-                className={classes.modalButtons}
-              >
-                CODE
-              </Button>
+              <a href={demoLink}>
+                <Button
+                  startIcon={<VisibilityIcon />}
+                  variant="contained"
+                  className={classes.modalButtons}
+                >
+                  DEMO
+                </Button>
+              </a>
+              <a href={codeLink}>
+                <Button
+                  startIcon={<CodeIcon />}
+                  variant="contained"
+                  className={classes.modalButtons}
+                >
+                  CODE
+                </Button>
+              </a>
             </div>
           </div>
         </div>
