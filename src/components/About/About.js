@@ -12,10 +12,10 @@ const About = () => {
         <Typography variant="h2" gutterBottom>
           HI THERE. IT'S DANTE ALLIEVI
         </Typography>
-        <Typography variant="subtitle1">
+        <Typography variant="subtitle1" className={classes.subtitle}>
           I'M A WEB DESIGNER & DEVELOPER CURRENTLY BASED IN HANNOVER GERMANY.
         </Typography>
-        <Typography variant="subtitle1" paragraph>
+        <Typography className={classes.subtitle} variant="subtitle1" paragraph>
           HIT ME UP AND LET'S WORK TOGETHER
         </Typography>
 

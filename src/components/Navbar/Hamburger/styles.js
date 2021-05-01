@@ -73,8 +73,8 @@ export default makeStyles((theme) => ({
     },
     [theme.breakpoints.up("md")]: {
       transform: "scale(1)",
-      right: "4%",
-      top: "4%",
+      right: "3%",
+      top: "3%",
     },
   },
 

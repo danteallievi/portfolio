@@ -7,5 +7,6 @@ export default makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     height: "10vh",
+    textAlign: "center",
   },
 }));

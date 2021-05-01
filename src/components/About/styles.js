@@ -13,4 +13,7 @@ export default makeStyles((theme) => ({
     marginTop: "3rem",
     width: "10rem",
   },
+  subtitle: {
+    fontSize: 18,
+  },
 }));

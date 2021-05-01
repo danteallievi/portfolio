@@ -9,7 +9,8 @@ export default makeStyles((theme) => ({
     paddingTop: "6rem",
   },
   gris: {
-    color: "#9e9e9e",
+    color: "#ced4da",
+    fontSize: 18,
   },
   grid: {
     marginBottom: "1rem",
