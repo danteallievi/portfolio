@@ -7,6 +7,13 @@ export default makeStyles((theme) => ({
 
   title: {
     paddingTop: "6rem",
+
+    [theme.breakpoints.down("md")]: {
+      paddingTop: "4rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: "3rem",
+    },
   },
   gris: {
     color: "#ced4da",
