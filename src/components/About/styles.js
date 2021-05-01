@@ -7,7 +7,7 @@ export default makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    height: "90vh",
+    minHeight: "calc(100vh - 10vh)",
   },
   button: {
     marginTop: "3rem",

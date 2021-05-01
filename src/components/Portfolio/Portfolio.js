@@ -28,9 +28,8 @@ const Portfolio = () => {
   const classes = useStyles();
 
   return (
-    <Container>
-      <div className={classes.toolbar} />
-      <Typography variant="h3" gutterBottom>
+    <Container className={classes.container}>
+      <Typography className={classes.title} variant="h3" gutterBottom>
         Portfolio
       </Typography>
       <Typography variant="body1" className={classes.gris} paragraph>
