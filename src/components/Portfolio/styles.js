@@ -20,6 +20,7 @@ export default makeStyles((theme) => ({
     fontSize: 18,
   },
   grid: {
+    flexGrow: 1,
     marginBottom: "1rem",
   },
 }));

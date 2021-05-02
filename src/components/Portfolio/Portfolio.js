@@ -12,7 +12,6 @@ const eCommerce = {
   demo: `https://tech-e-commerce.netlify.app/`,
   code: `https://github.com/danteallievi/e-commerce`,
 };
-
 const breakingBad = {
   text: `For this project I've worked in React.js, with a Breaking Bad API, to create a small app with a simple pagination, to show and filter the character info.`,
   demo: `https://danteallievi.github.io/breakingbad/`,
@@ -44,7 +43,6 @@ const Portfolio = () => {
         alignItems="center"
         className={classes.grid}
         direction="row"
-        spacing={4}
       >
         <Project
           title="E-COMMERCE"

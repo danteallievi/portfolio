@@ -27,7 +27,13 @@ const Project = ({ title, text, technologies, image, demoLink, codeLink }) => {
         xl={3}
         className={classes.box}
       >
-        <img src={image} alt="Proyect" width="100%" className={classes.img} />
+        <img
+          src={image}
+          alt="Proyect"
+          width="100%"
+          height="100%"
+          className={classes.img}
+        />
         <Button
           variant="contained"
           className={classes.projectButtons}

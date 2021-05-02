@@ -10,9 +10,7 @@ const Navbar = () => {
   const [isIconOpen, setIsIconOpen] = useState(false);
   const classes = useStyles();
 
-  const handleOpenIcon = () => {
-    isIconOpen ? setIsIconOpen(false) : setIsIconOpen(true);
-  };
+  const handleOpenIcon = () => setIsIconOpen(!isIconOpen);
 
   return (
     <>
@@ -53,6 +51,15 @@ const Navbar = () => {
               className={classes.menuButtons}
             >
               Portfolio
+            </Button>
+            <Button
+              component={Link}
+              to="/skills"
+              onClick={handleOpenIcon}
+              variant="outlined"
+              className={classes.menuButtons}
+            >
+              Skills
             </Button>
           </div>
         </Fade>

@@ -11,7 +11,6 @@ import useStyles from "./styles";
 
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import CodeIcon from "@material-ui/icons/Code";
-import { NavLink } from "react-router-dom";
 
 const ModalWindow = ({
   open,
