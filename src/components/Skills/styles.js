@@ -44,6 +44,9 @@ export default makeStyles((theme) => ({
       width: "55vw",
       padding: "0.5rem",
     },
+    [theme.breakpoints.up("xl")]: {
+      width: "10vw",
+    },
   },
   content: {
     textAlign: "left",
