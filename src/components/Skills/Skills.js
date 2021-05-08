@@ -99,7 +99,7 @@ const Skills = () => {
                 </Grid>
                 <Grid item>
                   <Typography className={classes.subtitle} variant='subtitle1'>
-                    Express.js
+                    Express
                   </Typography>
                   <Line />
                 </Grid>
