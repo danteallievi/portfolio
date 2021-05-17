@@ -1,8 +1,8 @@
-import { useState } from "react";
-import ModalWindow from "./ModalWindow/ModalWindow";
+import { useState } from 'react';
+import ModalWindow from './ModalWindow/ModalWindow';
 
-import { Button, Grid } from "@material-ui/core";
-import useStyles from "./styles";
+import { Button, Grid } from '@material-ui/core';
+import useStyles from './styles';
 
 const Project = ({ title, text, technologies, image, demoLink, codeLink }) => {
   const [open, setOpen] = useState(false);
@@ -20,22 +20,23 @@ const Project = ({ title, text, technologies, image, demoLink, codeLink }) => {
     <>
       <Grid
         container
-        justify="center"
+        justify='center'
         item
         xs={8}
+        sm={6}
         md={4}
         xl={3}
         className={classes.box}
       >
         <img
           src={image}
-          alt="Proyect"
-          width="100%"
-          height="100%"
+          alt='Proyect'
+          width='100%'
+          height='100%'
           className={classes.img}
         />
         <Button
-          variant="contained"
+          variant='contained'
           className={classes.projectButtons}
           onClick={handleOpen}
         >
