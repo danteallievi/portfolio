@@ -10,7 +10,7 @@ import authappImg from '../../images/authapp.jpg';
 import breakingBadImg from '../../images/BreakingBad.jpg';
 
 const memories = {
-  text: `For this project I implemented the MERN-STACK for the first time, taking care of the APP from start to finish. Adding authentication, to allow the user to register and log in with email, or register using their google account, to like, create or delete a post`,
+  text: `For this project I implemented the MERN-STACK for the first time, taking care of the APP from start to finish. Adding authentication, to allow the user to register and log in with email, or register using their google account, to like, create or delete a post. And also pagination and a section to see the recommended posts.`,
   demo: `https://mern-app-memo.netlify.app/`,
   code: `https://github.com/danteallievi/mern-memories`,
 };

@@ -21,6 +21,7 @@ const Project = ({ title, text, technologies, image, demoLink, codeLink }) => {
       <Grid
         container
         justify='center'
+        alignContent='center'
         item
         xs={8}
         sm={6}
