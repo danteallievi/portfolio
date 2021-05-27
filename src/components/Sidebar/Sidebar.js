@@ -30,7 +30,7 @@ const Sidebar = () => {
             <MailIcon className={classes.icon} />
           </i>
         </a>
-        <a href='https://drive.google.com/file/d/1feI_RfPuSpKapAKn2yIY_W0QWAcB5_Ju/view?usp=sharing'>
+        <a href='https://drive.google.com/file/d/1Uj0k86oNOhqibrlaj34TUl0uBhmYnqYX/view?usp=sharing'>
           <span className={classes.text}>Resume</span>
           <i>
             <PermContactCalendarIcon className={classes.icon} />
