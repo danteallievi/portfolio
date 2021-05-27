@@ -4,10 +4,10 @@ import useStyles from './styles';
 import Project from './Proyect/Project';
 
 import memoriesImg from '../../images/memories.jpg';
-import eCommerceImg from '../../images/e-commerce.png';
-import expenseTrackerImg from '../../images/expenseTracker.jpg';
-import authappImg from '../../images/authapp.jpg';
-import breakingBadImg from '../../images/BreakingBad.jpg';
+import eCommerceImg from '../../images/commerce.jpg';
+import expenseTrackerImg from '../../images/expense.jpg';
+import authappImg from '../../images/auth.jpg';
+import breakingBadImg from '../../images/breaking.jpg';
 
 const memories = {
   text: `For this project I implemented the MERN-STACK for the first time, taking care of the APP from start to finish. Adding authentication, to allow the user to register and log in with email, or register using their google account, to like, create or delete a post. And also pagination and a section to see the recommended posts.`,

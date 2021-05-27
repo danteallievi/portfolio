@@ -32,7 +32,7 @@ const Project = ({ title, text, technologies, image, demoLink, codeLink }) => {
         <img
           src={image}
           alt='Proyect'
-          width='100%'
+          width='125%'
           height='100%'
           className={classes.img}
         />

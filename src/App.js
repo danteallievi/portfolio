@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { About, Portfolio, Skills, Layout } from "./components";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { About, Portfolio, Skills, Layout } from './components';
 
-import { CssBaseline } from "@material-ui/core";
-import { MuiThemeProvider } from "@material-ui/core/styles";
-import theme from "./styles";
+import { CssBaseline } from '@material-ui/core';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import theme from './styles';
 
 const App = () => {
   return (
@@ -12,13 +12,13 @@ const App = () => {
       <Router>
         <Layout>
           <Switch>
-            <Route exact path="/">
+            <Route exact path='/'>
               <About />
             </Route>
-            <Route exact path="/portfolio">
+            <Route exact path='/portfolio'>
               <Portfolio />
             </Route>
-            <Route exact path="/skills">
+            <Route exact path='/skills'>
               <Skills />
             </Route>
           </Switch>

@@ -1,17 +1,15 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-export default makeStyles(theme => ({
+export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
 
   box: {
-    width: '100%',
+    width: '200%',
     height: '100%',
     position: 'relative',
     margin: '2rem 1rem 0 1rem',
     transition: 'all 0.5s',
-    boxShadow: '0px 0px 20px 0px #000000',
     borderRadius: '2rem',
-    padding: '1rem',
 
     '& button': {
       top: '80%',
@@ -34,6 +32,10 @@ export default makeStyles(theme => ({
     },
   },
   img: {
+    padding: '1rem',
+
+    boxShadow: '0px 0px 20px 0px #000000',
+
     borderRadius: '2rem',
   },
   projectButtons: {
