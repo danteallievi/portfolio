@@ -4,7 +4,7 @@ export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
 
   box: {
-    width: '200%',
+    width: '100%',
     height: '100%',
     position: 'relative',
     margin: '2rem 1rem 0 1rem',
@@ -32,11 +32,20 @@ export default makeStyles((theme) => ({
     },
   },
   img: {
+    width: '125%',
+    height: '100%',
     padding: '1rem',
-
     boxShadow: '0px 0px 20px 0px #000000',
-
     borderRadius: '2rem',
+
+    [theme.breakpoints.down('sm')]: {
+      width: '150%',
+      height: '100%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '130%',
+      height: '150%',
+    },
   },
   projectButtons: {
     top: '90%',
