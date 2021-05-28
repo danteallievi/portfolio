@@ -5,12 +5,12 @@ import {
   Backdrop,
   Fade,
   Typography,
-} from "@material-ui/core";
+} from '@material-ui/core';
 
-import useStyles from "./styles";
+import useStyles from './styles';
 
-import VisibilityIcon from "@material-ui/icons/Visibility";
-import CodeIcon from "@material-ui/icons/Code";
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import CodeIcon from '@material-ui/icons/Code';
 
 const ModalWindow = ({
   open,
@@ -25,8 +25,8 @@ const ModalWindow = ({
 
   return (
     <Modal
-      aria-labelledby="transition-modal-title"
-      aria-describedby="transition-modal-description"
+      aria-labelledby='transition-modal-title'
+      aria-describedby='transition-modal-description'
       className={classes.modal}
       open={open}
       onClose={handleClose}
@@ -40,20 +40,20 @@ const ModalWindow = ({
         <div className={classes.paper}>
           <div className={classes.content}>
             <button onClick={handleClose} className={classes.close}>
-              {"\u00D7"}
+              {'\u00D7'}
             </button>
 
             <Typography
-              variant="subtitle2"
-              component="h1"
+              variant='subtitle2'
+              component='h1'
               className={classes.sectionTitle}
             >
               PROJECT
             </Typography>
 
             <Typography
-              variant="h4"
-              component="h2"
+              variant='h4'
+              component='h2'
               gutterBottom
               className={classes.projectTitle}
             >
@@ -64,8 +64,8 @@ const ModalWindow = ({
               {technologies.map((tech) => (
                 <Grid item key={tech}>
                   <Typography
-                    variant="subtitle2"
-                    component="h3"
+                    variant='subtitle2'
+                    component='h3'
                     className={classes.technology}
                   >
                     {tech}
@@ -75,15 +75,14 @@ const ModalWindow = ({
             </Grid>
 
             <Typography
-              gutterBottom
-              variant="subtitle2"
-              component="h4"
-              className={classes.sectionTitle}
+              variant='subtitle2'
+              component='h4'
+              className={classes.sectionSubTitle}
             >
               ABOUT
             </Typography>
 
-            <Typography component="h5" variant="body1" className={classes.text}>
+            <Typography component='h5' variant='body1' className={classes.text}>
               {text}
             </Typography>
 
@@ -91,7 +90,7 @@ const ModalWindow = ({
               <a href={demoLink}>
                 <Button
                   startIcon={<VisibilityIcon />}
-                  variant="contained"
+                  variant='contained'
                   className={classes.modalButtons}
                 >
                   DEMO
@@ -100,7 +99,7 @@ const ModalWindow = ({
               <a href={codeLink}>
                 <Button
                   startIcon={<CodeIcon />}
-                  variant="contained"
+                  variant='contained'
                   className={classes.modalButtons}
                 >
                   CODE

@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const gris = '#94a4b4';
-export default makeStyles(theme => ({
+export default makeStyles((theme) => ({
   modal: {
     display: 'flex',
     alignItems: 'center',
@@ -12,20 +12,20 @@ export default makeStyles(theme => ({
   },
   paper: {
     border: '2px solid #000',
-    width: '50vw',
+    width: '55vw',
     height: '70vh',
     backgroundColor: '#343a41',
     boxShadow: theme.shadows[8],
     [theme.breakpoints.down('md')]: {
-      width: '55vw',
+      width: '60vw',
       height: '70vh',
     },
     [theme.breakpoints.down('sm')]: {
-      width: '65vw',
-      height: '75vh',
+      width: '70vw',
+      height: '80vh',
     },
     [theme.breakpoints.down('xs')]: {
-      width: '75vw',
+      width: '80vw',
       height: '80vh',
     },
   },
@@ -65,6 +65,18 @@ export default makeStyles(theme => ({
     },
   },
 
+  sectionSubTitle: {
+    fontWeight: 500,
+    color: gris,
+    padding: '2.5rem 0 1rem 0',
+    [theme.breakpoints.down('md')]: {
+      padding: '1rem 0 0.5rem 0',
+    },
+    [theme.breakpoints.down('sm')]: {
+      padding: '1rem 0 0.5rem 0',
+    },
+  },
+
   projectTitle: {
     fontWeight: 900,
     [theme.breakpoints.down('xs')]: {
@@ -85,22 +97,25 @@ export default makeStyles(theme => ({
     padding: '0.3rem',
     fontWeight: 100,
     color: gris,
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '0.8rem',
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '0.8rem',
+    },
     [theme.breakpoints.down('xs')]: {
-      fontSize: '0.7rem',
+      fontSize: '0.6rem',
     },
   },
 
   text: {
     fontSize: '1.2rem',
     [theme.breakpoints.down('md')]: {
-      fontSize: '1.1rem',
+      fontSize: '1rem',
     },
-    [theme.breakpoints.down('sm')]: {
-      marginTop: '20px',
-    },
+    [theme.breakpoints.down('sm')]: {},
     [theme.breakpoints.down('xs')]: {
-      marginTop: '0px',
-      fontSize: '0.9rem',
+      fontSize: '0.8rem',
     },
   },
 
