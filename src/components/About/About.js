@@ -28,7 +28,7 @@ const About = () => {
           disableElevation
           size='small'
         >
-          VIEW PROJECTS!
+          VIEW PROJECTS
         </Button>
       </Container>
     </>
