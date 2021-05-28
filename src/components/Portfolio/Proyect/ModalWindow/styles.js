@@ -22,11 +22,11 @@ export default makeStyles((theme) => ({
     },
     [theme.breakpoints.down('sm')]: {
       width: '70vw',
-      height: '80vh',
+      height: '75vh',
     },
     [theme.breakpoints.down('xs')]: {
       width: '80vw',
-      height: '80vh',
+      height: '75vh',
     },
   },
 
