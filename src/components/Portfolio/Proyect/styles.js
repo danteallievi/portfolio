@@ -9,10 +9,11 @@ export default makeStyles((theme) => ({
     position: 'relative',
     margin: '2rem 1rem 0 1rem',
     transition: 'all 0.5s',
-    borderRadius: '2rem',
+    // backgroundColor: 'red',
+    // borderRadius: '2rem',
 
     '& button': {
-      top: '80%',
+      top: '70%',
       backgroundColor: '#f3f3f3',
       opacity: '0',
     },
@@ -48,11 +49,10 @@ export default makeStyles((theme) => ({
     },
   },
   projectButtons: {
-    top: '90%',
     position: 'absolute',
 
     [theme.breakpoints.down('xs')]: {
-      fontSize: '0.7rem',
+      fontSize: '0.6rem',
     },
   },
 
