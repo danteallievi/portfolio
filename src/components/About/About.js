@@ -13,7 +13,7 @@ const About = () => {
           HI THERE. IT'S DANTE ALLIEVI
         </Typography>
         <Typography variant='subtitle1' className={classes.subtitle}>
-          I'M A WEB DESIGNER & DEVELOPER CURRENTLY BASED IN HANNOVER GERMANY.
+          I'M A WEB DESIGNER & DEVELOPER CURRENTLY BASED IN BARCELONA, SPAIN.
         </Typography>
         <Typography className={classes.subtitle} variant='subtitle1' paragraph>
           HIT ME UP AND LET'S WORK TOGETHER
